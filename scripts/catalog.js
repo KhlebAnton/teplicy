@@ -30,7 +30,7 @@ function loadProducts(subcategoryId) {
 
     if (subcategoryId === 'greenhouse') {
 
-        fetch('/products/greenhouse and polick.json')
+        fetch('products/greenhouse and polick.json')
             .then(response => response.json())
             .then(data => {
                 var products = data[subcategoryId];
@@ -44,7 +44,7 @@ function loadProducts(subcategoryId) {
                         if (!product.availability) {
                             var productHTML = `
                         <div class="product">
-                            <img src="/${product.image}" alt="${product.name}">
+                            <img src="${product.image}" alt="${product.name}">
                             <h3>${product.name}</h3>
                             <span class="availability">НЕТ в наличии</span>
                             <div class="selector-descs def" id="product${index}">
@@ -55,7 +55,7 @@ function loadProducts(subcategoryId) {
 
                             var productHTML = `
                         <div class="product">
-                            <img src="/${product.image}" alt="${product.name}">
+                            <img src="${product.image}" alt="${product.name}">
                             <h3>${product.name}</h3>
                             <div class="selector-descs" id="product${index}">
                                 <span>Длина:</span>
@@ -143,7 +143,7 @@ function loadProducts(subcategoryId) {
                         if (!product.availability) {
                             var productHTML = `
                         <div class="product">
-                            <img src="/${product.image}" alt="${product.name}">
+                            <img src="${product.image}" alt="${product.name}">
                             <h3>${product.name}</h3>
                             <span class="availability">НЕТ в наличии</span>
                             <div class="selector-descs def" id="product${index}">
@@ -154,7 +154,7 @@ function loadProducts(subcategoryId) {
 
                             var productHTML = `
                         <div class="product">
-                            <img src="/${product.image}" alt="${product.name}">
+                            <img src="${product.image}" alt="${product.name}">
                             <h3>${product.name}</h3>
                             <div class="selector-descs" id="product${index}">
                                 <span>Длина:</span>
@@ -255,7 +255,7 @@ function loadProducts(subcategoryId) {
                     products.forEach((product, index) => {
                         var productHTML = `
               <div class="product">
-                <img src="/${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <div class="selector-descs" id="product${index}">
             `;
@@ -290,7 +290,7 @@ function loadProducts(subcategoryId) {
                     products.forEach((product, index) => {
                         var productHTML = `
               <div class="product">
-                <img src="/${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <div class="selector-descs" id="product${index}">
             `;
@@ -326,7 +326,7 @@ function loadProducts(subcategoryId) {
                     products.forEach((product, index) => {
                         var productHTML = `
               <div class="product">
-                <img src="/${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <div class="selector-descs" id="product${index}">
             `;
