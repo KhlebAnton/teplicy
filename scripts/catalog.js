@@ -129,7 +129,7 @@ function loadProducts(subcategoryId) {
                 console.error('Error loading product data:', error);
             });
     } else if (subcategoryId === 'cottage-furniture') {
-        fetch('/products/cottage-furniture and color-polick.json')
+        fetch('products/cottage-furniture and color-polick.json')
             .then(response => response.json())
             .then(data => {
                 var products = data[subcategoryId];
@@ -245,7 +245,7 @@ function loadProducts(subcategoryId) {
             });
 
     } else if (subcategoryId === 'greenhouse-polick') {
-        fetch(`/products/greenhouse and polick.json`)
+        fetch(`products/greenhouse and polick.json`)
             .then(response => response.json())
             .then(data => {
                 var products = data[subcategoryId];
@@ -280,7 +280,7 @@ function loadProducts(subcategoryId) {
                 console.error('Error loading product data:', error);
             });
     } else if (subcategoryId === 'color-polick') {
-        fetch(`/products/cottage-furniture and color-polick.json`)
+        fetch(`products/cottage-furniture and color-polick.json`)
             .then(response => response.json())
             .then(data => {
                 var products = data[subcategoryId];
@@ -316,7 +316,7 @@ function loadProducts(subcategoryId) {
             });
     } else {
         // Make an AJAX request to load product data from products.json
-        fetch(`/products/${subcategoryId}.json`)
+        fetch(`products/${subcategoryId}.json`)
             .then(response => response.json())
             .then(data => {
                 var products = data[subcategoryId];
